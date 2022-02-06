@@ -4,14 +4,16 @@ using Bazzar.Infrastructures.Data.SQLServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bazzar.Infrastructures.Data.SQLServer.Migrations
 {
     [DbContext(typeof(AdvertisementDBContext))]
-    partial class AdvertisementDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220206074922_userprofiles")]
+    partial class userprofiles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

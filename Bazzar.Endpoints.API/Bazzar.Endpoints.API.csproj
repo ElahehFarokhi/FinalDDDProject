@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EventStore.Client" Version="21.2.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
@@ -20,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Bazzar.Core.ApplicationServices\Bazzar.Core.ApplicationServices.csproj" />
     <ProjectReference Include="..\Bazzar.Infrastructure.Data.Fake1\Bazzar.Infrastructure.Data.Fake1.csproj" />
+    <ProjectReference Include="..\Bazzar.Infrastructures.Data.EventsSourcings\Bazzar.Infrastructures.Data.EventsSourcings.csproj" />
     <ProjectReference Include="..\Bazzar.Infrastructures.Data.SQLServer\Bazzar.Infrastructures.Data.SQLServer.csproj" />
   </ItemGroup>
 
